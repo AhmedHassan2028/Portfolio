@@ -4,304 +4,195 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ahmed Hassan — Software Engineering student portfolio. Full-stack projects, skills, and experience.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="styles.css">
 
-  <title>Portfolio</title>
+  <title>Ahmed Hassan — Portfolio</title>
 </head>
 <body>
-  <!-- NAVBAR -->
-  <nav>
-    <div class="left">
-      <a href="/">Ahmed Hassan</a>
-    </div>
+  <div class="noise" aria-hidden="true"></div>
 
-    <div class="right">
-      <a href="https://github.com/AhmedHassan2028" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-github"></i>
-        <span>Github</span>
-      </a>
-      
-      <a href="https://www.linkedin.com/in/ahmed-hassan-70480b335
-
-      " target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-linkedin"></i>
-        <span>Linkedin</span>
-      </a>
-      
-      <a href="mailto:ahmedhass0609@gmail.com">
-        <i class="fa-solid fa-envelope"></i>
-        <span>Email</span>
-      </a>
-
-      <a href="images\Ahmed Hassan Resume (3).pdf" download class="resume-button">
-        <i class="fa-solid fa-file-arrow-down"></i>
-        <span>Download Resume</span>
-        <!-- <p>Fix the resume button</p> -->
-      </a>
-
-    </div>
-  </nav>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="#">Ahmed Hassan</a>
+      <div class="nav__links">
+        <a class="nav__link" href="#skills">Skills</a>
+        <a class="nav__link" href="#projects">Projects</a>
+        <a class="nav__link" href="#experience">Experience</a>
+      </div>
+      <div class="nav__actions">
+        <a class="nav__icon" href="https://github.com/AhmedHassan2028" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        <a class="nav__icon" href="https://www.linkedin.com/in/ahmed-hassan-70480b335" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <a class="nav__icon" href="mailto:ahmedhass0609@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        </a>
+        <a class="btn btn--primary btn--sm" href="images/Ahmed Hassan Resume (3).pdf" download aria-label="Download resume">
+          <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+          <span>Resume</span>
+        </a>
+      </div>
+    </nav>
+  </header>
 
   <main>
-    <!-- SECTION 1: Hero -->
-    <section class="hero-section">
-      <div class="text">
-        <h2>Hi, I'm Ahmed 👋</h2>
-        <!-- <p> I'm a second-year Software Engineering student at the University of Ottawa with a strong passion for building modern, scalable web applications. I specialize in full-stack development using technologies like Angular, Spring Boot, NestJS, and TypeScript. Whether it's crafting clean, responsive UIs or designing robust backend APIs, I enjoy solving complex problems and continuously improving my skills through hands-on projects and learning.</p> -->
-        <p>I'm a second-year Software Engineering student at the University of Ottawa with a strong passion for building modern, scalable web applications. I specialize in full-stack development using technologies like React, Next.js, TypeScript, and Material UI. Whether it's crafting clean, responsive user interfaces or integrating REST APIs to build robust backend services, I enjoy solving complex problems and continuously improving my skills through hands-on projects and learning.</p>
-        <div class="links">
-          <a href="#skills">
-            <i class="fa-solid fa-code"></i>
-            <span>Skills</span>
-          </a>
-          
-          <a href="#projects">
-            <i class="fa-solid fa-file-arrow-down"></i>
-            <span>Projects</span>
-          </a>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow">University of Ottawa · Software Engineering</p>
+          <h1 id="hero-heading" class="hero__title">Hi, I'm Ahmed <span aria-hidden="true"></span></h1>
+          <div class="hero__intro">
+            <p class="hero__lead">I'm a second-year Software Engineering student at the University of Ottawa specializing in full-stack development.</p>
+            <p class="hero__lead">I've built projects like GoalRush and ConflictZero, developing scalable applications using React, Next.js, TypeScript, and FastAPI. My experience spans frontend design, backend APIs, and database integration.</p>
+            <p class="hero__lead">I'm passionate about solving complex problems and continuously improving through hands-on development.</p>
+          </div>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#skills">
+              <i class="fa-solid fa-code" aria-hidden="true"></i>
+              View skills
+            </a>
+            <a class="btn btn--ghost" href="#projects">
+              <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+              See projects
+            </a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__frame">
+            <img src="images/pfp1.jpeg" alt="Ahmed Hassan">
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="headshot">
-        <img src="images/pfp1.jpeg" alt="Ahmed Hassan headshot">
+    <section id="skills" class="section section--skills" aria-labelledby="skills-heading">
+      <div class="section__header">
+        <p class="section__eyebrow">What I work with</p>
+        <h2 id="skills-heading" class="section__title">Skills</h2>
+        <p class="section__intro">My skill set spans both frontend and backend development, allowing me to deliver end-to-end solutions. I've worked with a variety of modern tools and frameworks that support clean code, modular architecture, and responsive design. I'm constantly learning and adapting to new technologies to build fast, maintainable, and user-friendly applications.</p>
+      </div>
+      <ul class="skill-grid" role="list">
+        <li class="skill-card"><img src="images/html-logo.webp" alt="" width="32" height="32" loading="lazy"><span>HTML</span></li>
+        <li class="skill-card"><img src="images/css-logo.webp" alt="" width="32" height="32" loading="lazy"><span>CSS</span></li>
+        <li class="skill-card"><img src="images/javascript-logo.webp" alt="" width="32" height="32" loading="lazy"><span>JavaScript</span></li>
+        <li class="skill-card"><img src="images/Typescript-01.png" alt="" width="32" height="32" loading="lazy"><span>TypeScript</span></li>
+        <li class="skill-card"><img src="images/free-java-icon-svg-png-download-1174953.png" alt="" width="32" height="32" loading="lazy"><span>Java</span></li>
+        <li class="skill-card"><img src="images/Python-logo-notext.svg.png" alt="" width="32" height="32" loading="lazy"><span>Python</span></li>
+        <li class="skill-card"><img src="images/sql-server-icon-png-29.png" alt="" width="32" height="32" loading="lazy"><span>SQL</span></li>
+        <li class="skill-card"><img src="images/react-logo.webp" alt="" width="32" height="32" loading="lazy"><span>React</span></li>
+        <li class="skill-card"><img src="images/nextjs.png" alt="" width="32" height="32" loading="lazy"><span>Next.js</span></li>
+        <li class="skill-card"><img src="images/Spring_Boot.svg.png" alt="" width="32" height="32" loading="lazy"><span>Spring Boot</span></li>
+        <li class="skill-card"><img src="images/firebase.png" alt="" width="32" height="32" loading="lazy"><span>Firestore</span></li>
+        <li class="skill-card"><img src="images/mysql-5-logo-svg-vector.svg" alt="" width="32" height="32" loading="lazy"><span>MySQL</span></li>
+        <li class="skill-card"><img src="images/Postgresql_elephant.svg.png" alt="" width="32" height="32" loading="lazy"><span>PostgreSQL</span></li>
+        <li class="skill-card"><img src="images/rest-api-icon.webp" alt="" width="32" height="32" loading="lazy"><span>REST APIs</span></li>
+        <li class="skill-card"><img src="images/shadcn-logo.png" alt="" width="32" height="32" loading="lazy"><span>ShadCN</span></li>
+        <li class="skill-card"><img src="images/material-ui-1.svg" alt="" width="32" height="32" loading="lazy"><span>Material UI</span></li>
+        <li class="skill-card"><img src="images/clerk-logo.jpeg" alt="" width="32" height="32" loading="lazy"><span>Clerk</span></li>
+        <li class="skill-card"><img src="images/PowerShell_5.0_icon.png" alt="" width="32" height="32" loading="lazy"><span>PowerShell</span></li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section section--projects" aria-labelledby="projects-heading">
+      <div class="section__header">
+        <p class="section__eyebrow">Browse my recent</p>
+        <h2 id="projects-heading" class="section__title">Projects</h2>
+      </div>
+      <div class="card-grid">
+        <article class="project-card">
+          <div class="project-card__media">
+            <img src="images/ChatGPT Image Aug 21, 2025, 12_45_22 PM.png" alt="" class="project-card__img" loading="lazy">
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">GoalRush</h3>
+            <a class="btn btn--secondary btn--block" href="https://github.com/AhmedHassan2028/GoalRush" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-card__media">
+            <img src="images/Screenshot 2026-01-21 132336.png" alt="" class="project-card__img" loading="lazy">
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Conflict Zero</h3>
+            <a class="btn btn--secondary btn--block" href="https://github.com/AhmedHassan2028/ConflictZero" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-card__media">
+            <img src="images/Screenshot 2026-03-31 211002.png" alt="" class="project-card__img" loading="lazy">
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">PlateCost</h3>
+            <a class="btn btn--secondary btn--block" href="https://github.com/AhmedHassan2028/PlateCost" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-card__media">
+            <img src="images/logo.jpg" alt="" class="project-card__img" loading="lazy">
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Habit Hints</h3>
+            <a class="btn btn--secondary btn--block" href="https://github.com/AhmedHassan2028/HabitHint" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-card__media">
+            <img src="images/weather-icon-png-2.png" alt="" class="project-card__img" loading="lazy">
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Weather app</h3>
+            <a class="btn btn--secondary btn--block" href="https://github.com/AhmedHassan2028/Weather-App" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-card__media">
+            <img src="images/movie-night11.jpg" alt="" class="project-card__img" loading="lazy">
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Movie App</h3>
+            <a class="btn btn--secondary btn--block" href="https://github.com/AhmedHassan2028/Movie-App" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
       </div>
     </section>
 
- <!-- SECTION 2: Skills -->
- <section id="skills" class="skills-section">
-  <h2>Skills</h2>
-  <div class="text">
-    My skill set spans both frontend and backend development, allowing me to deliver end-to-end solutions. I’ve worked with a variety of modern tools and frameworks that support clean code, modular architecture, and responsive design. I'm constantly learning and adapting to new technologies to build fast, maintainable, and user-friendly applications.
-  </div>
-
-  <div class="cells">
-    <div class="cell">
-      <img src="images/html-logo.webp" alt="html logo">
-      <span>HTML</span>
-    </div>
-    
-    <div class="cell">
-      <img src="images/css-logo.webp" alt="css logo">
-      <span>CSS</span>
-    </div>
-    
-    <div class="cell">
-      <img src="images/javascript-logo.webp" alt="javascript logo">
-      <span>JavaScript</span>
-    </div>
-    
-    <div class="cell">
-      <img src="images/Typescript-01.png" alt="node logo">
-      <span>TypeScript</span>
-    </div>
-    
-    <div class="cell">
-      <img src="images/free-java-icon-svg-png-download-1174953.png" alt="react logo">
-      <span>Java</span>
-    </div>
-
-    <div class="cell">
-      <img src="images/Python-logo-notext.svg.png" alt="react logo">
-      <span>Python</span>
-    </div>
-
-    <div class="cell">
-      <img src="images/sql-server-icon-png-29.png" alt="react logo">
-      <span>SQL</span>
-    </div>
-
-    <div class="cell">
-      <img src="images/react-logo.webp" alt="react logo">
-      <span>React</span>
-    </div>
-
-    <!-- <div class="cell">
-      <img src="images/Angular_full_color_logo.svg.png" alt="react logo">
-      <span>Angular</span>
-    </div> -->
-    <div class="cell">
-          <img src="images/nextjs.png" alt="react logo">
-          <span>NextJs</span>
-    </div>
-    
-    <div class="cell">
-      <img src="images/Spring_Boot.svg.png" alt="react logo">
-      <span>SpringBoot</span>
-    </div>
-
-    
-
-    <div class="cell">
-      <img src="images/firebase.png" alt="react logo">
-      <span>Firestore</span>
-    </div>
-
-    <div class="cell">
-      <img src="images/mysql-5-logo-svg-vector.svg" alt="react logo">
-      <span>MySQL</span>
-    </div>
-
-    <div class="cell">
-      <img src="images/Postgresql_elephant.svg.png" alt="react logo">
-      <span>PostgreSQL</span>
-    </div>
-
-    <!-- <div class="cell">
-      <img src="images/sql-server-icon-png-29.png" alt="react logo">
-      <span>SQL</span>
-    </div> -->
-
-
-    <!-- <div class="cell">
-      <img src="images/linuxLogo.png" alt="react logo">
-      <span>Linux</span>
-    </div> -->
-
-    <div class="cell">
-      <img src="images/rest-api-icon.webp" alt="react logo">
-      <span>Rest APIs</span>
-    </div>
-
-    <div class="cell">
-      <img src="images/shadcn-logo.png" alt="react logo">
-      <span>ShadCN</span>
-    </div>
-
-    <div class="cell">
-      <img src="images/material-ui-1.svg" alt="react logo">
-      <span>Material UI</span>
-    </div>
-
-    <div class="cell">
-      <img src="images/clerk-logo.jpeg" alt="react logo">
-      <span>Clerk</span>
-    </div>
-
-    <div class="cell">
-      <img src="images/PowerShell_5.0_icon.png" alt="react logo">
-      <span>PowerShell</span>
-    </div>
-
-  </div>
-</section>
-
-<section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        
-        <div class="experience-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="images/ChatGPT Image Aug 21, 2025, 12_45_22 PM.png" alt="Project 1" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">GoalRush</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AhmedHassan2028/GoalRush'">Github</button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="images/Screenshot 2026-01-21 132336.png" alt="Project 4" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Conflict Zero</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AhmedHassan2028/ConflictZero'">Github</button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="images/adobe-portfolio8664.jpg" alt="Project 1" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Portfolio</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AhmedHassan2028/Portfolio'">Github</button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="images/logo.jpg" alt="Project 2" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Habit Hints</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AhmedHassan2028/HabitHint'">Github</button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="images/weather-icon-png-2.png" alt="Project 3" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Weather app</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AhmedHassan2028/Weather-App'">Github</button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="images/movie-night11.jpg" alt="Project 4" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Movie App</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/AhmedHassan2028/Movie-App'">Github</button>
-                </div>
-            </div>
-            
-        </div>
-        </div>
+    <section id="experience" class="section section--experience" aria-labelledby="experience-heading">
+      <div class="section__header">
+        <p class="section__eyebrow">Roles &amp; involvement</p>
+        <h2 id="experience-heading" class="section__title">Experience</h2>
+      </div>
+      <div class="experience-list">
+        <article class="experience-card">
+          <div class="experience-card__logo">
+            <img src="images/uottawaLogo.png" alt="" width="56" height="56" loading="lazy">
+          </div>
+          <div class="experience-card__content">
+            <h3 class="experience-card__title">Engineering Outreach Instructor</h3>
+            <p class="experience-card__meta">Winter 2026</p>
+          </div>
+        </article>
+      </div>
     </section>
+  </main>
 
-    <section id="projects">
-        <h1 class="title">Experience</h1>
-        
-        <div class="experience-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="images/uottawaLogo.png" alt="Project 1" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Engineering Outreach Instructor (Winter 2026)</h2>
-            </div>
-          
-            
-        </div>
-    </section>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Ahmed Hassan · Built with HTML &amp; CSS</p>
+  </footer>
 
-<!-- SECTION 4: Contact -->
-
-<!--
-<section id="contact" class="contact-section">
-  <h2>Contact</h2>
-
-  <div class="group">
-    <div class="text">
-      Interested in collaborating or have a project in mind? I'm always open to new opportunities, internships, or freelance work related to software development. Whether you want to discuss tech, get help with a project, or just connect, feel free to reach out — I'd be happy to chat.
-    </div>
-
-    <form action="https://formspree.io/f/mbloqnkv" method="POST">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-    
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-    
-      <label for="message">Message</label>
-      <textarea id="message" name="message" cols="30" rows="10" required></textarea>
-    
-      <input type="hidden" name="_redirect" value="ahassandev.com">
-    
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</section>
-
--->
-</main>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
